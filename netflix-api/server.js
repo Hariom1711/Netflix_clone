@@ -25,7 +25,7 @@ mongoose.connect('mongodb+srv://Hariom1711:Hariomojha1711@cluster0.vwtmxqg.mongo
   });
 
 app.use("/api/user", userRoutes);
-
+const port =process.env.port ||5000
 app.listen(5000, () => {
   console.log("server started on port 5000");
 });
